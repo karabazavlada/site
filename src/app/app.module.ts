@@ -9,10 +9,13 @@ import { TopComponent } from './top/top.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes =[
+  {path: '',component: HomeComponent},
   { path: 'about', component: AboutComponent}
+  
 ];
 
 @NgModule({
@@ -22,7 +25,8 @@ const appRoutes: Routes =[
     TopComponent,
     CarouselComponent,
     ContactsComponent, 
-    AboutComponent
+    AboutComponent, 
+    HomeComponent
   ],
   imports: [
     BrowserModule, 
