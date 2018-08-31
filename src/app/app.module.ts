@@ -8,13 +8,30 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TopComponent } from './top/top.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { AboutComponent } from './about/about.component';
+import { HistoryComponent } from './history/history.component';
 import { HomeComponent } from './home/home.component';
+import { ParentsComponent } from './parents/parents.component';
+import { FriendsComponent } from './friends/friends.component';
+import { RequisitesComponent } from './requisites/requisites.component';
+import { ProgrammsComponent } from './programms/programms.component';
+import { AnketaComponent } from './anketa/anketa.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+
+
 
 
 const appRoutes: Routes =[
-  {path: '',component: HomeComponent},
-  { path: 'about', component: AboutComponent}
+  {path: '', component: HomeComponent},
+  { path: 'history', component: HistoryComponent},
+  { path: 'parents', component: ParentsComponent}, 
+  { path: 'friends', component: FriendsComponent}, 
+  { path: 'requisites', component: RequisitesComponent},
+  { path: 'programms', component: ProgrammsComponent},
+  { path: 'anketa', component: AnketaComponent}, 
+  { path: 'about', component: AboutComponent},
+  { path: 'contact' , component: ContactComponent}, 
+  { path: '**', redirectTo: '/'}
   
 ];
 
@@ -25,8 +42,15 @@ const appRoutes: Routes =[
     TopComponent,
     CarouselComponent,
     ContactsComponent, 
+    HistoryComponent, 
+    HomeComponent, 
+    ParentsComponent, 
+    FriendsComponent, 
+    RequisitesComponent, 
+    ProgrammsComponent, 
+    AnketaComponent, 
     AboutComponent, 
-    HomeComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule, 

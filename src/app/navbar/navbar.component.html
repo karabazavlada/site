@@ -7,37 +7,37 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="" routerLinkActive="active">Главная <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Главная <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           О фонде
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/about" routerLinkActive="active">История</a>
-          <a class="dropdown-item" href="#">Друзья и партнеры</a>
+          <a class="dropdown-item" routerLink="/history" routerLinkActive="active">История и миссия</a>
+          <a class="dropdown-item" routerLink="/friends" routerLinkActive="active">Друзья и партнеры</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Реквизиты</a>
+          <a class="dropdown-item" routerLink="/requisites" routerLinkActive="active">Реквизиты</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Программы</a>
+        <a class="nav-link" routerLink="/programms" routerLinkActive="active">Программы</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Волонтерам
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Заполнить анкету</a>
+          <a class="dropdown-item" routerLink="/anketa" routerLinkActive="active">Заполнить анкету</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">О работе волонтерами</a>
+          <a class="dropdown-item"  routerLink="/about" routerLinkActive="active">О работе волонтерами</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Приемным родителям</a>
+        <a class="nav-link"  routerLink="/parents" routerLinkActive="active">Приемным родителям</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Контакты</a>
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Контакты</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
