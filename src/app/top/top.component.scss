@@ -1,9 +1,16 @@
 .sgrid-N {
   background-color: white;
   min-height: 1px;
-  padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.count {
+  padding-top: 40px;
+}
+
+p.num {
+  color: #65adc1;
 }
 
 .mx-auto {
@@ -14,174 +21,102 @@
 
 #right { text-align: right; }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
-
-//colors
-$white: #fff;
-$blue: #65adc1;
-
-//base styles
+$gray: #bbbbbb;
 
 * {
-  box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
-}
-
-html,
-body {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background: $white;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
 }
 
 .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1em;
+  height: 40px;
   text-align: center;
-
-  @media (min-width: 600px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
-h1 {
-  color: $blue;
-  font-size: 1.25em;
-  font-weight: 900;
-  margin: 0 0 2em;
-
-  @media (min-width: 450px) {
-    font-size: 1.75em;
-  }
-
-  @media (min-width: 760px) {
-    font-size: 3.25em;
-  }
-
-  @media (min-width: 900px) {
-    font-size: 5.25em;
-    margin: 0 0 1em;
-  }
-}
-
-p {
-  color: $blue;
-  font-size: 12px;
-
-  @media(min-width: 600px) {
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, 0);
-    top: 90%;
-  }
-
-  @media(max-height: 500px) {
-    left: 0;
-    position: relative;
-    top: 0;
-    transform: translate(0, 0);
-  }
-
-  a {
-    background: rgba($blue, 0);
-    border-bottom: 1px solid;
-    color: $blue;
-    line-height: 1.4;
-    padding: .25em;
-    text-decoration: none;
-
-    &:hover {
-      background: rgba($blue, 1);
-      color: $blue;
-    }
-  }
-}
-//button styles
-
-
-//default button
 .btn {
-  color: $blue;
-  cursor: pointer;
-  // display: block;
-  font-size:16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 0 2em;
-  max-width: 200px;
-  position: relative;
+  color: #65adc1; /* Text color */
+  background: transparent; /* Remove background color */
+  border: 2px solid #65adc1; /* Border thickness, line style, and color */
+  border-radius: 70px; /* Adds curve to border corners */
   text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  @media(min-width: 600px) {
-
-    margin: 0 1em 2em;
-
-    //     &:nth-of-type(even) {
-    //       margin-right: 2.5em;
-    //     }
-
-    //     &:nth-of-type(5) {
-    //       margin-right: 0;
-    //     }
-
-  }
-
-  &:hover { text-decoration: none; }
-
+  text-transform: uppercase; /* Make letters uppercase */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #65adc1;
+}
+.btn1:hover {
+  background-color: #65adc1;
+  color: white;
 }
 
-.btn-1 {
-  background: darken($white, 1.5%);
-  font-weight: 500;
-
-  svg {
-    height:100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+b {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:100px;
+  background: #fff;
+  border: 2px solid #65adc1;
+  color: #65adc1;
+  letter-spacing:1px;
+  text-shadow:0;
+  font:{
+    size:12px;
+    weight:bold;
   }
+  cursor: pointer;
+  transition: all 0.25s ease;
 
-  rect {
-    fill: none;
-    stroke: $blue;
-    stroke-width: 2;
-    stroke-dasharray: 422, 0;
-    transition-delay: none;
+  &:active {
+    letter-spacing: 2px ;
+  }
+  &:after {
+    content:"";
+  }
+}
+.onclic {
+  width: 10px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  border-color:$gray;
+  border-width:4px;
+  font-size:0;
+  border-left-color: #65adc1;
+  animation: rotating 2s 0.25s linear infinite;
+  &:hover {
+    color: dodgerblue;
+    background: white;
+  }
+}
+.validate {
+  content:"";
+  font-size:16px;
+  color: black;
+  background: dodgerblue;
+  border-radius: 50px;
+  &:after {
+    font-family:'FontAwesome';
+    content:" done \f00c";
   }
 }
 
-.btn-1:hover {
-  background: rgba($white, 0);
-  font-weight: 900;
-  letter-spacing: 1px;
-
-  rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
