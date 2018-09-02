@@ -7,30 +7,31 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="" routerLinkActive="active">Главная </a>
+        <a class="nav-link" routerLink="" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact:true}" >Главная </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown"  routerLinkActive="active">
         <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           О фонде
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/history" routerLinkActive="active">История и миссия</a>
-          <a class="dropdown-item" routerLink="/friends" routerLinkActive="active">Друзья и партнеры</a>
+          <a class="dropdown-item" routerLink="/history" >История и миссия</a>
+          <a class="dropdown-item" routerLink="/friends">Друзья и партнеры</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/requisites" routerLinkActive="active">Реквизиты</a>
+          <a class="dropdown-item" routerLink="/requisites" >Реквизиты</a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/programms" routerLinkActive="active">Программы</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" routerLinkActive="active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Волонтерам
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/anketa" routerLinkActive="active">Заполнить анкету</a>
+          <a class="dropdown-item" routerLink="/anketa" >Заполнить анкету</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item"  routerLink="/about" routerLinkActive="active">О работе волонтерами</a>
+          <a class="dropdown-item"  routerLink="/about" >О работе волонтерами</a>
         </div>
       </li>
       <li class="nav-item">

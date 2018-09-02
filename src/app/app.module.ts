@@ -17,7 +17,7 @@ import { ProgrammsComponent } from './programms/programms.component';
 import { AnketaComponent } from './anketa/anketa.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import {Carousel2Component} from './carousel2/carousel2.component'
+import {Carousel2Component} from './carousel2/carousel2.component';
 
 
 
