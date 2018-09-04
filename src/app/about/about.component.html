@@ -20,12 +20,218 @@
 </div>
 <div class="jumbotron">
         <p>Если Вы решили, что готовы <strong>стать волонтером</strong> нажимайте кнопку ниже и заполняйте анкету! Мы Вас ждем!</p>
+       
         <p>
-               
-                 <a routerLink="/anketa" routerLinkActive="active"><button id="button" class="btn btn1">Заполнить анкету</button></a>
-                 
+          <a class="btn btn1" data-toggle="collapse" href="#anketa" role="button" aria-expanded="false" aria-controls="anketa">Заполнить анкету</a>
+          
         </p>
-      </div>
+       
+            <div class="collapse multi-collapse" id="anketa">
+              <div class="card card-body">
+                  <form>
+                      <div class="pages">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputName"><strong>Имя</strong></label>
+                          <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputSurname"><strong>Фамилия</strong></label>
+                          <input type="text" class="form-control" id="inputSurname" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputDate"><strong>Дата рождения</strong></label>
+                        <input type="date" class="form-control" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="inputGender" ><strong>Пол </strong></label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Жен
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Муж
+                        </label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" ><strong>Город</strong></label>
+                        <input type="text" class="form-control" id="inputCity" required >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputMetro"><strong>Метро</strong></label>
+                        <input type="text" class="form-control" id="inputMetro" required>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputPhone"><strong>Номер телефона </strong></label>
+                        <input class="form-control" id="inputPhone" maxlength="16" name="phone" required="required" size="16" type="tel"
+                       placeholder="+7(___)___-__-__" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"><strong>Email</strong></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите свою почту">
+                        <small id="emailHelp" class="form-text text-muted">Мы никому не передадим ваш email</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputWork"><strong>Занятость</strong></label>
+                          <select id="inputWork" class="form-control" required>
+                            <option selected>Выберите из списка...</option>
+                            <option>Работаю (полная занятость)</option>
+                            <option>Работаю (частичная занятость)</option>
+                            <option>Работаю на дому</option>
+                            <option>Имею свое дело</option>
+                            <option>Учусь в школе</option>
+                            <option>Учусь в ВУЗе или СУЗе</option>
+                            <option>На пенсии</option>
+                            <option>В отпуске по уходу за ребенком </option>
+                            <option>Не работаю и не учусь</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputWork"><strong>Вы можете помочь</strong></label>
+                            </div>
+                     <table class="table"> 
+                       <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1"><strong>Работа на пункте сбора помощи</strong> <br/> (сортировка, погрузка-разгрузка)</label>
+                       
+                        </td>
+                         <td> 
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2"><strong>Курьерская помощь</strong></label>
+                       
+                        </td>
+                        <td>
+                    
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3"><strong>Работа на телефоне</strong> <br/> (звонить на мобильные телефоны со своего личного телефона)</label>
+                       
+                        </td>
+                        </tr>
+                        <tr> 
+                          <td><input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                              <label class="form-check-label" for="inlineCheckbox4"><strong>Административная работа</strong><br/> (возможность звонить в будни, в рабочее время; доступ в Интернет)</label>
+                            </td>
+                              
+                         
+                           <td> 
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5"><strong>Организация мероприятий</strong></label>
+                              
+                            </td>
+                            <td>
+                        
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                                  <label class="form-check-label" for="inlineCheckbox6"><strong>Организация процессов, ответственность за определенный объем работы</strong></label>
+                                
+                              </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                                    <label class="form-check-label" for="inlineCheckbox7"><strong>Профессиональное написание статей</strong></label>
+                                  </td>
+                                 <td> 
+                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                                      <label class="form-check-label" for="inlineCheckbox8"><strong>Участие в мероприятиях</strong> <br/>(выставки, акции, раздача листовок)</label>
+                                    </td>
+                                    <td><input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option9">
+                                      <label class="form-check-label" for="inlineCheckbox8"><strong>Помощь в полиграфии</strong> <br/>(дизайн)</label>
+                                  </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
+                                          <label class="form-check-label" for="inlineCheckbox9"><strong>Помощь в полиграфии</strong> <br/> (тиражирование)</label>
+                                        </td>
+                                       <td> 
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
+                                            <label class="form-check-label" for="inlineCheckbox10"><strong>Проведение мастер-классов и обучающих занятий для детей и волонтеров</strong></label>
+                                          </td>
+                                          <td><input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                                            <label class="form-check-label" for="inlineCheckbox11"><strong>Видеосъемка детей (профессионально) для устройства их в семьи</strong></label>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option12">
+                                                <label class="form-check-label" for="inlineCheckbox12"><strong>Помощь приемным семьям</strong></label>
+                                              </td>
+                                             <td> 
+                                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option13">
+                                                  <label class="form-check-label" for="inlineCheckbox13"><strong>Помощь семьям в трудной жизненной ситуации</strong></label>
+                                                </td>
+                                                <td><input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option14">
+                                                  <label class="form-check-label" for="inlineCheckbox14"><strong>Психолог</strong> <br/>(профессиональная помощь)</label>
+                                              </td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option15">
+                                                      <label class="form-check-label" for="inlineCheckbox15"><strong>Юрист</strong> <br/>(профессиональная помощь)</label>
+                                                    </td>
+                                                   <td> 
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox16" value="option16">
+                                                        <label class="form-check-label" for="inlineCheckbox16"><strong>Программирование</strong> <br/>(PHP, SQL, прочее)</label>
+                                                      </td>
+                                                      <td><input class="form-check-input" type="checkbox" id="inlineCheckbox17" value="option17">
+                                                        <label class="form-check-label" for="inlineCheckbox17"><strong>Специалист по привлечению средств</strong></label>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox18" value="option18" >
+                                                            <label class="form-check-label" for="inlineCheckbox18" ><strong>Помощь транспортом</strong> <br/>(перевозки по Москве и Московской области)</label>
+                                                          </td>
+                                                         <td> 
+                                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox19" value="option19">
+                                                              <label class="form-check-label" for="inlineCheckbox19"><strong>Помощь транспортом</strong> <br/>(перевозки по другим регионам РФ)</label>
+                                                            </td>
+                                                            <td><input class="form-check-input" type="checkbox" id="inlineCheckbox20" value="option20">
+                                                              <label class="form-check-label" for="inlineCheckbox20"><strong>Перечислить деньги на счет</strong></label>
+                                                          </td>
+                                                          </tr>
+                                  </table>
+                                  <div class="form-group">
+                                      <label for="inputHelp"><strong>Ваши варианты помощи</strong></label>
+                                      <input type="text" class="form-control" id="inputHelp">
+                                    </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                          <label class="form-check-label" for="gridCheck">
+                              В соответствии с ФЗ "О персональных данных" № 152 -ФЗ от 27.07.2006 г. я выражаю своё согласие на обработку (действия (операции) с персональными данными) моих персональных данных, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование, уничтожение БФ "Волонтеры в помощь детям-сиротам" и его представителями моих персональных данных, переданных мною лично при подаче в БФ анкеты волонтера, следующих моих персональных данных: ФИО, дата рождения и тд.
+                          </label>
+                        </div>
+                      </div>
+                       
+                      <button type="submit" class="btn  btn-primary btn1" data-toggle="collapse" href="#anketa2" role="button" aria-expanded="false" aria-controls="anketa">Отправить анкету</button>
+                      <div class="collapse multi-collapse" id="anketa2">
+                          <div>
+                            <br/>
+                              Спасибо!
+                              <br/>
+                              ДОБРО ПОЖАЛОВАТЬ В РЯДЫ ВОЛОНТЕРОВ!
+                          </div></div>
+                          </div>
+                    </form>
+                    
+                    <router-outlet></router-outlet> 
+              </div>
+            </div>
+          
       
 
 
