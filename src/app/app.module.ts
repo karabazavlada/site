@@ -18,7 +18,6 @@ import { AnketaComponent } from './anketa/anketa.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import {Carousel2Component} from './carousel2/carousel2.component';
-import { OurChildrenComponent } from './our-children/our-children.component';
 
 
 
@@ -26,16 +25,15 @@ import { OurChildrenComponent } from './our-children/our-children.component';
 const appRoutes: Routes =[
   {path: '', component: HomeComponent},
   { path: 'history', component: HistoryComponent},
-  { path: 'parents', component: ParentsComponent},
-  { path: 'friends', component: FriendsComponent},
+  { path: 'parents', component: ParentsComponent}, 
+  { path: 'friends', component: FriendsComponent}, 
   { path: 'requisites', component: RequisitesComponent},
   { path: 'programms', component: ProgrammsComponent},
-  { path: 'anketa', component: AnketaComponent},
+  { path: 'anketa', component: AnketaComponent}, 
   { path: 'about', component: AboutComponent},
-  { path: 'contact' , component: ContactComponent},
-  { path: 'our-children', component: OurChildrenComponent},
+  { path: 'contact' , component: ContactComponent}, 
   { path: '**', redirectTo: '/'}
-
+  
 ];
 
 @NgModule({
@@ -44,21 +42,21 @@ const appRoutes: Routes =[
     NavbarComponent,
     TopComponent,
     CarouselComponent,
-    ContactsComponent,
-    HistoryComponent,
-    HomeComponent,
-    ParentsComponent,
-    FriendsComponent,
-    RequisitesComponent,
-    ProgrammsComponent,
-    AnketaComponent,
-    AboutComponent,
-    ContactComponent,
-    Carousel2Component, OurChildrenComponent
+    ContactsComponent, 
+    HistoryComponent, 
+    HomeComponent, 
+    ParentsComponent, 
+    FriendsComponent, 
+    RequisitesComponent, 
+    ProgrammsComponent, 
+    AnketaComponent, 
+    AboutComponent, 
+    ContactComponent, 
+    Carousel2Component
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
+    BrowserModule, 
+    FormsModule, 
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
